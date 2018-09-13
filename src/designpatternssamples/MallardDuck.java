@@ -9,14 +9,23 @@ package designpatternssamples;
  *
  * @author Dallas
  */
-public class MallardDuck extends Duck{
+public class MallardDuck implements Duck{
     
-    public MallardDuck(){
-        quackBehavior = new Quack();
-        flyBehavior = new FlyWithWings();
+    
+        public void quack(){
+            System.out.println("Quack");
+        }
+        public void fly(){
+            System.out.println("I'm flying");
+        }
+    }
+        /*public MallardDuck(){
+            quackBehavior = new Quack();
+            flyBehavior = new FlyWithWings();
     }
     
     public void display(){
         System.out.println("I'm a real Mallard duck");
     }
-}
+
+}*/

@@ -9,8 +9,10 @@ package designpatternssamples;
  *
  * @author Dallas
  */
-public abstract class Duck{
-        FlyBehavior flyBehavior;
+public interface Duck{
+        public void quack();
+        public void fly();
+       /* FlyBehavior flyBehavior;
         QuackBehavior quackBehavior;
         public Duck(){
         }
@@ -31,10 +33,11 @@ public abstract class Duck{
      *
      * @param fb
      */
-    public void setFlyBehavior(FlyBehavior fb){
+    /*public void setFlyBehavior(FlyBehavior fb){
             flyBehavior = fb;
         }
         public void setQuackBehavior(QuackBehavior qb){
             quackBehavior = qb;
         }
+        */
     }
